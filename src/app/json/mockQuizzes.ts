@@ -4,6 +4,7 @@ export const mockQuizzes = [
     title: "Sample Quiz",
     description: "Test your knowledge with this sample quiz!",
     reward: "$5",
+    imageUrl: "https://via.placeholder.com/150", // Add your image URL here
     questions: [
       {
         id: "q1",
@@ -32,6 +33,7 @@ export const mockQuizzes = [
     title: "Science Basics",
     description: "A quick quiz to test your basic science knowledge.",
     reward: "$10",
+    imageUrl: "https://via.placeholder.com/150", // Add your image URL here
     questions: [
       {
         id: "q1",
@@ -60,6 +62,7 @@ export const mockQuizzes = [
     title: "History Quiz",
     description: "How well do you know your history? Find out here!",
     reward: "$8",
+    imageUrl: "https://via.placeholder.com/150", // Add your image URL here
     questions: [
       {
         id: "q1",

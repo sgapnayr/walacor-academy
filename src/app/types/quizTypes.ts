@@ -16,6 +16,7 @@ export interface Quiz {
   description?: string;
   reward: string;
   questions: Question[];
+  imageUrl?: string;
 }
 
 export interface QuizResult {

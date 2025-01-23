@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Button from "@/app/components/Button";
 
 interface ModalProps {
   isOpen: boolean;
@@ -49,18 +50,22 @@ const Modal: React.FC<ModalProps> = ({
 
             {/* Actions */}
             <div className="flex items-center justify-end pt-4 space-x-2">
-              <button
-                onClick={onCancel}
-                className="rounded-md border py-2 px-4 text-sm text-slate-600 hover:bg-slate-100 transition-all"
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={onCancel || (() => {})}
+                className="hover:bg-gray-100"
               >
                 {cancelText}
-              </button>
-              <button
-                onClick={onConfirm}
-                className="rounded-md bg-green-600 py-2 px-4 text-sm text-white shadow-md hover:bg-green-700 transition-all"
+              </Button>
+              <Button
+                variant="primary"
+                size="sm"
+                onClick={onConfirm || (() => {})}
+                className="hover:bg-[#00B3DD]/50"
               >
                 {confirmText}
-              </button>
+              </Button>
             </div>
           </motion.div>
         </motion.div>
